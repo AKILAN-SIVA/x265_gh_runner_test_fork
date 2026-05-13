@@ -271,6 +271,7 @@ static void distributeThreadsForTme(
     int& numPools,
     int& threadsFrameEnc)
 {
+   (void) bNumaSupport;
     if (totalNumThreads < MIN_TME_THREADS)
     {
         x265_log(p, X265_LOG_WARNING, "Low thread count detected, disabling --threaded-me."
